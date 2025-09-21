@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YearnaZ - Lose Stuff, Find Friends</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 32px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00ffe7;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease-in, liquidGlow 2s infinite alternate;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #00c9aa;
+      margin: 2rem 0 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: rgba(0, 255, 231, 0.2);
+      color: #000;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 40px;
+      transition: 0.3s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 4px 15px rgba(0, 255, 231, 0.2);
+    }
+    .btn:hover {
+      background: rgba(0, 255, 231, 0.3);
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 255, 231, 0.3);
+    }
+    .hero-wall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 24px;
+      padding: 1.5rem;
+      width: 280px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      animation: liquidFloat 3s infinite ease-in-out;
+    }
+    .hero-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 40px rgba(0, 255, 231, 0.2);
+    }
+    .hero-card h3 {
+      color: #00ffe7;
+      margin: 0 0 0.5rem;
+    }
+    .emoji {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 2px 4px rgba(0, 255, 231, 0.3));
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 1rem;
+      border-radius: 16px;
+    }
+    a {
+      color: #00ffe7;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #00c9aa;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes liquidGlow {
+      from { text-shadow: 0 0 5px rgba(0, 255, 231, 0.5); }
+      to { text-shadow: 0 0 15px rgba(0, 255, 231, 0.8); }
+    }
+    @keyframes liquidFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .hero-wall { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YearnaZ: Lose Stuff, Find Friends 🚀</h1>
+    <p>Lost your phone or bag at a hotel? YearnaZ connects Gen Y & Z travelers to recover items, earn rewards, and vibe with a global travel tribe.</p>
+
+    <a href="/report" class="btn">Report a Lost Item 😢</a>
+    <a href="/find" class="btn">Help Find Stuff 🙌</a>
+
+    <div class="section">
+      <div class="emoji">🧳</div>
+      <h2>How YearnaZ Works</h2>
+      <p>Forgot something at a hotel or homestay? Report it on YearnaZ, offer a reward, and connect with nearby travelers who can help. Find an item? Earn cash or perks and make new friends. It’s lost and found with a vibe!</p>
+    </div>
+
+    <div class="section">
+      <div class="emoji">🌍</div>
+      <h2>Join the Travel Tribe</h2>
+      <p>YearnaZ isn’t just about finding stuff. Create a profile, share travel stories, and connect with nomads worldwide. From lost chargers to lifelong friends, we’re the community for real ones.</p>
+    </div>
+
+    <div class="section">
+      <h2>Hero Wall: Celebrate the Wins</h2>
+      <div class="hero-wall">
+        <div class="hero-card">
+          <div class="emoji">🏖️</div>
+          <h3>Beach Rescue</h3>
+          <p>@chloewaves returned a GoPro at Sunset Beach!<br>Reward: Smoothie + 60 Trust Points<br>Badge: 🏖️ Beach Hero</p>
+        </div>
+        <div class="hero-card">
+          <div class="emoji">⚽</div>
+          <h3>Stadium Saver</h3>
+          <p>@kingmalik found an iPhone at MetroPark Stadium!<br>Reward: VIP tour + signed jersey<br>Badge: ⚽ Stadium Hero</p>
+        </div>
+        <div class="hero-card">
+          <div class="emoji">🎤</div>
+          <h3>Festival Legend</h3>
+          <p>@partypriya saved a wallet at VibeFest 2025!<br>Reward: 2 VIP tickets<br>Badge: 🎤 Festival Savior</p>
+        </div>
+      </div>
+      <a href="/herowall" class="btn">See All Heroes</a>
+    </div>
+
+    <div class="section">
+      <div class="emoji">📸</div>
+      <h2>Flex Your Wins</h2>
+      <p>Returned an item? Share your YearnaZ Hero moment on Instagram with our Story templates. Show off badges like ⚽ Stadium Hero or ✈️ Sky Saver and inspire the tribe! <a href="/templates">Download Templates</a></p>
+    </div>
+
+    <footer>
+      🚀 YearnaZ: Powered by kindness & tech. Join at <a href="https://yearnaz.example">yearnaz.world</a><br>
+      Built with 💖 for Gen Y & Z travelers | <a href="/terms">Terms</a> | <a href="/privacy">Privacy</a>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        document.body.classList.add('scrolled');
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
