@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Lost Item - YearnaZ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+        button {
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #ff5252;
+        }
+        a {
+            color: #a777e3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Report a Lost Item</h1>
+        <p>We’ll help you find it. Fill out the details below.</p>
+
+        <form>
+            <input type="text" placeholder="Item Name (e.g., Water Bottle, Wallet)" required>
+            <input type="text" placeholder="Last Seen Location (e.g., Library, Cafeteria)" required>
+            <textarea rows="4" placeholder="Description (Color, Brand, Notes)"></textarea>
+            <button type="submit">📤 Submit Report</button>
+        </form>
+
+        <p style="margin-top: 20px;">
+            ← <a href="index.html">Back to Home</a>
+        </p>
+    </div>
+</body>
+</html>
